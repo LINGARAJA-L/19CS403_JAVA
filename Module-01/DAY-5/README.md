@@ -22,8 +22,8 @@ III.	Call the displayDetails() method for each student.
  ```
 /*
 Program to implement a Static Variable using Java
-Developed by: LINGARAJA
-RegisterNumber:  212222040086
+Developed by: Mohamed Roshan S
+RegisterNumber:  212222040101
 */
 ```
 
