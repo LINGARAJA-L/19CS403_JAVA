@@ -1,19 +1,23 @@
-
-# Ex.No:10(E)  JAVA LINKEDHASH SET
+# Ex.No:10(D) JAVA HASHSET & LINKEDHASHSET
 
 ## AIM:
-To write a Java program using LinkedHashSet to store unique elements in insertion order, display all elements, and show the total size of the set.
+ To create a java program use hashset concepts in collection and add the elements to the hashset and then display the elements iterate(use while) in an unordered collection.
+
+
 ## ALGORITHM :
-a.	Import java.util.LinkedHashSet.
-b.	Create a LinkedHashSet of type String.
-c.	Add some elements using .add() method.
-d.	Print all the elements in the set using a loop.
-e.	Use .size() method to get and print the number of elements in the set.
+1.	Start the Program.
+2.	Import `java.util.*`
+3.	Define class `Main` with `main` method:
+-	a) Initialize `Scanner` and read integer `n`
+-	b) Create a `HashSet` named `hs` to store unique strings
+4.	Use a loop to read `n` strings and add each to `hs`
+5.	Use an enhanced `for` loop to print each element in `hs`
+6.	End
 
 ## PROGRAM:
  ```
 
-Program to implement a LINKEDHASH SET
+Program to implement a JAVA HASHSET & LINKEDHASHSET using Java
 Developed by: LINGARAJA L
 RegisterNumber: 212222040086
 
@@ -27,27 +31,32 @@ public class HashSetDemo{
 
 public static void main(String args[]){
 
-LinkedHashSet <String> hs = new LinkedHashSet <String>();
+
 Scanner sc=new Scanner(System.in);
+ArrayList<String> list=new ArrayList<String>(); 
 int n=sc.nextInt();
 for(int i=0;i<n;i++)
 {
     
-hs.add(sc.next());
+list.add(sc.next());
 
 }
+HashSet<String> set=new HashSet<String>(list);  
+set.add(sc.next());  
+Iterator<String> i=set.iterator();  
+while(i.hasNext())  
+{  
+System.out.println(i.next());  
+}  
 
-System.out.println("LinkedHashSet: " + hs);  
-System.out.println("The size of the set is: " + hs.size());  
 }
 }
 ```
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/e4283f06-131b-4a08-a94d-ee83c9c65613)
-
+![image](https://github.com/user-attachments/assets/1872dbcf-5486-49b4-b8d2-a08ae8873f0a)
 
 ## RESULT:
+Thus the java program of hashmap concepts was executed and verified successfully.
 
-Thus the java program was successfully uses LinkedHashSet to store and display elements while maintaining insertion order and ensuring uniqueness. It also shows the correct count of unique elements. 
